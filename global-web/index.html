@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daisuki | Cocina Japonesa Tradicional</title>
+  <meta name="description" content="Daisuki — restaurante de cocina japonesa tradicional. Sushi, ramen y robata preparados con técnica clásica." />
+
+  <!-- Fuentes personalizadas: Shippori Mincho (serif japonesa) para títulos, EB Garamond para texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Enlaces CSS Modulares -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/secciones.css" />
+</head>
+<body>
+
+  <!-- ----------- HEADER  -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-jp">大好き</span>
+        <span class="logo-en">Daisuki</span>
+      </a>
+
+      <button type="button" class="nav-burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#platillos">Platillos</a></li>
+          <li><a href="#habilidades-web">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECCION INICIO  -->
+    <section id="inicio" class="hero hero-slider" aria-label="Promociones de temporada">
+      <span class="vertical-label" aria-hidden="true">日本料理</span>
+
+      <div class="promo-slider">
+        <article class="promo-slide is-active" data-accent="#4ec0df">
+          <div class="promo-copy">
+            <span class="promo-day">Martes</span>
+            <h1>SUSHI A <span class="promo-highlight">$39</span></h1>
+            <p>Pide tu rollo favorito y llévate el segundo por solo $39 MXN.</p>
+            <div class="promo-actions">
+              <a href="#contacto" class="btn-primary">Ordenar</a>
+            </div>
+            <small>Términos y condiciones</small>
+          </div>
+          <div class="promo-visual">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Promoción de sushi" />
+          </div>
+        </article>
+
+        <article class="promo-slide" data-accent="#7dbd6b">
+          <div class="promo-copy">
+            <span class="promo-day">Jueves</span>
+            <h1>CLÁSICOS A <span class="promo-highlight">$99</span></h1>
+            <p>¡Tu elige! nuestro clásico favorito a solo $99 MXN.</p>
+            <div class="promo-actions">
+              <a href="#platillos" class="btn-primary">Ver menú</a>
+            </div>
+            <small>Términos y condiciones</small>
+          </div>
+          <div class="promo-visual">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80" alt="Promoción de ramen" />
+          </div>
+        </article>
+
+        <article class="promo-slide" data-accent="#d9734f">
+          <div class="promo-copy">
+            <span class="promo-day">Fin de semana</span>
+            <h1>OMAKASE <span class="promo-highlight">+ joya</span></h1>
+            <p>Explora sabores de temporada con una experiencia omakase premium.</p>
+            <div class="promo-actions">
+              <a href="#contacto" class="btn-primary">Reservar</a>
+            </div>
+            <small>Términos y condiciones</small>
+          </div>
+          <div class="promo-visual">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80" alt="Promoción de comida japonesa variada" />
+          </div>
+        </article>
+      </div>
+
+      <div class="promo-dots" aria-label="Navegación de promociones">
+        <button type="button" class="promo-dot is-active" aria-label="Promoción 1"></button>
+        <button type="button" class="promo-dot" aria-label="Promoción 2"></button>
+        <button type="button" class="promo-dot" aria-label="Promoción 3"></button>
+      </div>
+    </section><br>
+
+    <!-- SECCION NOSOTROS -->
+    <section id="nosotros" class="presentacion">
+      <span class="vertical-label" aria-hidden="true">御紹介</span>
+      <div class="presentacion-imagen">
+        <img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/47/d1/57/caption.jpg"
+          alt="Rolls de sushi sobre plato verde con ingredientes frescos y vista cercana estilo restaurante japonés" />
+      </div>
+      <div class="presentacion-texto">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2>Nosotros</h2>
+        <p>
+          Daisuki —大好き, "aquello que se ama profundamente"— nació en 2026 del deseo de
+          traer la mesa japonesa tal como se sirve en Kioto y Osaka: sin atajos, sin prisa.
+        </p>
+        <p>
+          Nuestro chef principal se formó durante ocho años en cocinas tradicionales de
+          Japón antes de fundar este espacio, donde cada arroz, cada corte y cada caldo
+          sigue el método clásico. Trabajamos con productores locales de pescado y
+          vegetales de temporada, y preparamos a diario nuestro dashi, miso y encurtidos.
+        </p>
+        <p>
+          Creemos que comer bien es una forma de hospitalidad —<em>omotenashi</em>— y que
+          cada detalle, desde la vajilla hasta el silencio entre platillos, forma parte de
+          la experiencia.
+        </p>
+      </div>
+    </section><br><br>
+
+    <div class="divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0 20 Q 25 0 50 20 T 100 20 T 150 20 T 200 20 T 250 20 T 300 20 T 350 20 T 400 20 T 450 20 T 500 20 T 550 20 T 600 20 T 650 20 T 700 20 T 750 20 T 800 20 T 850 20 T 900 20 T 950 20 T 1000 20 T 1050 20 T 1100 20 T 1150 20 T 1200 20"
+          fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+    </div>
+
+    <!-- SECCIÓN ESPECIALIDADES -->
+    <section id="especialidades" class="habilidades">
+      <span class="vertical-label" aria-hidden="true">技</span>
+      <h2 class="titulo-centrado habilidades-titulo">Nuestras especialidades</h2>
+      <p class="habilidades-copy">
+        La comida japonesa se distingue por su equilibrio, precisión y respeto por los ingredientes.
+        Cada platillo refleja tradición, sazón artesanal y una cocina pensada para celebrar el sabor limpio,
+        la temporada y la hospitalidad. Estos son los sabores que nos representan y por los que somos reconocidos.
+      </p>
+
+      <ul class="lista-habilidades">
+        <li class="habilidad habilidad-roll">
+          <div class="roll-visual">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80" alt="Sushi roll estilo japonés con ingredientes frescos" />
+          </div>
+          <h3>Shiki Pottle</h3>
+        </li>
+        <li class="habilidad habilidad-roll">
+          <div class="roll-visual">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80" alt="Ramen japonés con caldo y toppings" />
+          </div>
+          <h3>Tokio Pop</h3>
+        </li>
+        <li class="habilidad habilidad-roll">
+          <div class="roll-visual">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80" alt="Poke bowl y comida japonesa de temporada" />
+          </div>
+          <h3>Furikake</h3>
+        </li>
+        <li class="habilidad habilidad-roll">
+          <div class="roll-visual">
+            <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?auto=format&fit=crop&w=800&q=80" alt="Sushi estilo Shibuya con sabores intensos" />
+          </div>
+          <h3>Shibuya</h3>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN PLATILLOS -->
+    <section id="platillos" class="platillos">
+      <span class="vertical-label" aria-hidden="true">料理</span>
+      <p class="eyebrow eyebrow-center">Del menú</p>
+      <h2 class="titulo-centrado">Nuestros platillos</h2>
+
+      <div class="platillo-filtros" style="text-align:center; margin-top:1.25rem;">
+        <button type="button" data-filter="all" class="filter-btn">Todos</button>
+        <button type="button" data-filter="entrada" class="filter-btn">Entradas</button>
+        <button type="button" data-filter="principal" class="filter-btn">Principales</button>
+        <button type="button" data-filter="postre" class="filter-btn">Postres</button>
+      </div>
+
+      <div class="tarjetas-platillos">
+
+        <article class="tarjeta-platillo" data-category="principal">
+          <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=600&q=80" alt="Selección de sushi omakase" />
+          <div class="tarjeta-contenido">
+            <h3>Omakase de temporada</h3>
+            <p>Diez tiempos elegidos por el chef según el pescado del día.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-platillo" data-category="principal">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=80" alt="Tazón de ramen tonkotsu" />
+          <div class="tarjeta-contenido">
+            <h3>Ramen Tonkotsu</h3>
+            <p>Caldo de hueso de cerdo cocido veinte horas, chashu y huevo marinado.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-platillo" data-category="entrada">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Nigiri de sashimi fresco" />
+          <div class="tarjeta-contenido">
+            <h3>Nigiri Edomae</h3>
+            <p>Selección de nigiri con arroz avinagrado a temperatura de mano.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-platillo" data-category="principal">
+          <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?auto=format&fit=crop&w=600&q=80" alt="Wagyu a la parrilla robata" />
+          <div class="tarjeta-contenido">
+            <h3>Wagyu al Robata</h3>
+            <p>Corte A5 asado a carbón binchōtan, servido con sal marina.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-platillo" data-category="entrada">
+          <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80" alt="Tempura de vegetales de temporada" />
+          <div class="tarjeta-contenido">
+            <h3>Tempura de temporada</h3>
+            <p>Vegetales y camarón en masa ligera, con sal matcha.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-platillo" data-category="postre">
+          <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=600&q=80" alt="Postre parfait de matcha" />
+          <div class="tarjeta-contenido">
+            <h3>Matcha Parfait</h3>
+            <p>Helado de matcha, mochi y azuki, servido en copa fría.</p>
+            <a href="#contacto" class="enlace-platillo">Reservar &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--SECCIÓN HABILIDADES-->
+  <section id="habilidades-web" class="skills-section">
+    <div class="skills-container">
+      <p class="eyebrow eyebrow-center">Mi perfil técnico</p>
+      <h2 class="titulo-centrado">Habilidades de Desarrollo</h2>
+      
+      <div class="skills-grid">
+        <!-- Habilidad 1: Estructura y Estilos -->
+        <div class="skill-card">
+          <h3>HTML5 & CSS3</h3>
+          <p>Maquetación web moderna utilizando variables nativas, Flexbox y CSS Grid para crear interfaces atractivas y completamente responsivas.</p>
+        </div>
+        
+        <!-- Habilidad 2: Lógica del cliente -->
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Manipulación del DOM, validación de formularios en tiempo real, consumo de APIs (Fetch) y creación de componentes interactivos como carruseles.</p>
+        </div>
+        
+        <!-- Habilidad 3: Lógica del servidor -->
+        <div class="skill-card">
+          <h3>Backend con PHP</h3>
+          <p>Procesamiento seguro de peticiones del lado del servidor, manejo de sesiones de usuario y creación de paneles de administración.</p>
+        </div>
+        
+        <!-- Habilidad 4: Almacenamiento -->
+        <div class="skill-card">
+          <h3>Bases de Datos MySQL</h3>
+          <p>Diseño de tablas relacionales y ejecución de consultas preparadas (Prepared Statements) para el almacenamiento seguro y eficiente de datos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION CONTACTO -->
+  <section id="contacto" class="contact-section" style="background:var(--color-washi-alt); padding: var(--espacio-seccion) 1.5rem;">
+    <div class="presentacion-texto" style="max-width:820px;margin:0 auto;text-align:center;">
+      <p class="eyebrow">Contacto</p>
+      <h2>Escríbenos</h2>
+      <p style="color:var(--color-sumi-suave);max-width:60ch;margin:0 auto 1rem;">¿Tienes una reserva, una pregunta sobre ingredientes o quieres encargar algo especial? Envíanos un mensaje y te responderemos lo antes posible.</p>
+      <form id="contact-form" class="contact-form" action="assets/php/contact.php" method="post" novalidate style="margin-top:1rem;">
+        <label for="nombre">Nombre *</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+        <div class="error" data-for="nombre"></div>
+
+        <label for="email">Correo electrónico *</label>
+        <input id="email" name="email" type="email" placeholder="tu@correo.com" required />
+        <div class="error" data-for="email"></div>
+
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <div class="error" data-for="mensaje"></div>
+
+        <button type="submit" class="btn-primary">Enviar</button>
+        <div class="form-status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-col">
+        <span class="logo-jp footer-logo-jp">大好き</span>
+        <p class="footer-tagline">Cocina japonesa tradicional, servida con respeto por su origen.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-lista">
+          <li>Av. Chapultepec 480, Guadalajara, Jal.</li>
+          <li><a href="tel:+523312345678">33 1234 5678</a></li>
+          <li><a href="mailto:hola@daisuki.mx">hola@daisuki.mx</a></li>
+          <li>Mar–Dom, 13:00–23:00</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <ul class="footer-lista footer-social">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+
+      <!--ACCESO PARA ADMINISTRADORES-->
+      <div class="footer-col">
+        <h4>ADMINISTRACIÓN</h4>
+        <ul class="footer-lista">
+          <li><a href="admin_login.php">Iniciar sesión</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Daisuki. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
