@@ -1,0 +1,105 @@
+/* admin_login.css - Estilos para el acceso*/
+:root {
+  --color-sumi: #1a1a1a;
+  --color-ai: #22405a;
+  --color-washi: #f5f0e7;
+  --color-kin: #b7933e;
+  --color-blanco: #fffaf2;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top left, #ffffff, var(--color-washi));
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* Encabezado del login */
+header.site-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.brand { display: flex; gap: 10px; align-items: center; }
+.logo-jp { font-size: 1.8rem; color: var(--color-kin); }
+.brand-text { font-size: 1.2rem; font-weight: 600; color: var(--color-ai); }
+nav a { color: var(--color-sumi); text-decoration: none; font-size: 0.9rem; border-bottom: 1px solid var(--color-kin); padding-bottom: 2px; }
+
+/* Tarjeta de Login */
+.card {
+  background: var(--color-blanco);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(34, 64, 90, 0.08);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(183, 147, 62, 0.2);
+}
+
+.panel { padding: 3.5rem; }
+.card h2 { margin: 0 0 0.5rem; color: var(--color-sumi); font-size: 1.8rem; }
+.card p.lead { color: #666; margin-bottom: 2rem; }
+
+/* Formulario */
+.login-form { display: flex; flex-direction: column; gap: 1.2rem; }
+label { font-size: 0.9rem; color: var(--color-sumi); font-weight: 600; margin-bottom: -0.5rem; }
+
+input[type='text'], input[type='password'] {
+  padding: 12px 16px;
+  border: 2px solid rgba(183, 147, 62, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-kin);
+  box-shadow: 0 0 0 4px rgba(183, 147, 62, 0.1);
+}
+
+button[type='submit'] {
+  margin-top: 1rem;
+  padding: 14px;
+  background: var(--color-ai);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button[type='submit']:hover { background: #16293a; transform: translateY(-2px); }
+
+.error { background: #fee2e2; color: #a3312a; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; margin-bottom: 1rem; }
+.help { font-size: 0.85rem; color: #888; text-align: center; margin-top: 1rem; }
+
+/* Panel Lateral */
+.card-aside {
+  background: linear-gradient(135deg, var(--color-ai), #16293a);
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.aside-title { font-size: 1.4rem; font-weight: 700; color: var(--color-kin); margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  .card { grid-template-columns: 1fr; }
+  .card-aside { display: none; } 
+  .panel { padding: 2rem; }
+}
